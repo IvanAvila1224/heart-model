@@ -20,7 +20,7 @@ jobs:
     - name: download dataset
       run: wget -O data/heart.csv ${{github.event.client_payload.dataseturl}}
     - name: cat dataset
-      run: cat data/heart_disease.csv
+      run: cat data/heart.csv
     - name: train model
       run: python model/train.py
     - name: docker build
